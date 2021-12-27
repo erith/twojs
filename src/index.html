@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Two.JS with TypeScript</title>
+  </head>
+  <body>
+    <div id="map" style="width: 500px; height: 500px"></div>
+    <script src="bundle.js"></script>
+    <script>
+      //windows.WaferMap
+      const { WaferMap } = wafermap;
+      const map = new WaferMap(document.getElementById("map"));
+      map.draw();
+    </script>
+    <!--
+    <script type="module">
+      import { WaferMap } from "./bundle.esm.mjs";
+      const map = new WaferMap(document.getElementById("map"));
+      map.draw();
+    </script>
+    -->
+  </body>
+</html>
